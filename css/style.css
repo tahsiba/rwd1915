@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+/*============= Navbar CSS ===========*/
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    transition:all linear .3s;
+}
+.navbar-light .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fce38a;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition:all linear .3s;
+}
+.navbar-light .navbar-nav .nav-item {
+    padding:0 27px;
+}
+
+.navbar {
+    padding: 17px 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all linear .4s;
+}
+.bg {
+    background: #2ec6aa;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fce38a;
+}
+.navbar-light .navbar-nav .nav-link:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fce38a;
+}
+.navbar-light .navbar-nav .nav-link.active:after {
+    opacity: 1;
+    width: 100%;
+}
+/*============= Banner CSS ===========*/
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 236px;
+    padding-bottom: 236px;
+    position: relative;
+}
+#banner:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+}
+.banner-item h3 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 7px;
+    
+}
+.banner-item h1 {
+    font-size: 150px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 140px;
+    padding-bottom: 90px;
+    position: relative;
+}
+.banner-item h1:after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    
+}
+.banner-item a {
+    border: 3px solid #fff;
+    padding: 12px 30px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner-text-slider {
+    position: relative;
+    z-index: 99;
+}
+/*============= About CSS ===========*/
+#about {
+    padding-top: 92px;
+    padding-bottom: 110px;
+}
+.head h4 {
+    color: #333;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+.head h2 {
+    color: #333;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding-bottom: 58px;
+    position: relative;
+}
+.head h2:after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f38181;
+    
+}
+.head p{
+    font-weight: 400;
+    color: #999;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-item {
+    position: relative;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    opacity: 0;
+    transition: all linear .3s;
+}
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.content i {
+    color: #fff;
+    font-size: 18px;
+}
+.about-item:hover .overlay1{
+    opacity: 1;
+}
+.about-main {
+    padding-top: 80px;
+}
+/*============= Counter CSS ===========*/
+#counter {
+    background: #95e1d3;
+}
+.counter-item {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.counter-item:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -15px;
+    width: 2px;
+    height: 100%;
+    background: #b5eae0;
+}
+.counter-item:last-child:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -15px;
+    width: 2px;
+    height: 100%;
+    background: #b5eae0;
+}
+.counter-item h3 {
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.counter-item p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*============= Service CSS ===========*/
+#service {
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+.service-main {
+    padding-top: 48px;
+}
+.icon {
+    font-size: 33px;
+    color: #95e1d3;
+    line-height: 24px;
+}
+.service-text h3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+}
+.service-text p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+}
+.service-text {
+    padding-bottom: 93px;
+}
+/*============= feedback CSS ===========*/
+#feedback {
+    background: #f8f8f8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+}
+#feedback i {
+    font-size: 20px;
+    color: #cfcfcf;
+    cursor: pointer;
+}
+.left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.feed-icon {
+    margin-top: 32px;
+}
+.feed-icon i {
+    font-size: 62px;
+    color: #95e1d3;
+    padding: 32px 42px;
+    border: 3px solid #95e1d3;
+    text-align: center;
+}
+.feed-text {
+    margin-left:50px; 
+}
+.feed-text p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+}
+.feed-text h4 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+    color: #333;
+    text-transform: capitalize;
+    padding-left: 72px;
+    position: relative;
+}
+.feed-text h4:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: '';
+    width: 70px;
+    height: 3px;
+    background: #f38181;
+}
+/*============= team CSS ===========*/
+#team {
+    padding-top: 110px;
+    padding-bottom: 103px;
+}
+.team-main {
+    padding-top: 70px;
+}
+.team-item {
+    position: relative;
+}
+.team-over i {
+    width: 55px;
+    height: 55px;
+    background: #fce38a;
+    color: #f38181;
+    line-height: 55px;
+    margin:0 -1px;
+}
+.team-over i:hover {
+    background: #f38181;
+    color: #fff;
+}
+.team-text h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 400;
+    padding-top: 40px;
+}
+.team-text p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+}
+/*============= Gallery CSS ===========*/
+.item-img {
+    position: relative;
+}
+.gal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    opacity: 0;
+    transition: all linear .3s;   
+}
+.gal-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.item-img:hover .gal-overlay {
+    opacity: 1;
+}
+
+.gal-content i {
+    color: #fff;
+}
+.gal-content h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding-top: 15px;
+}
+.gal-content p {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-style: italic;
+    padding-top: 8px;
+}
+
+/*============= Footer CSS ===========*/
+#footer {
+    background: #f8f8f8;
+    padding-top: 75px;
+    padding-bottom: 69px;
+    margin-top: 100px;
+}
+.footer-item p {
+    padding-top: 34px;
+    color:#999;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+.footer-item h3 {
+    color:#333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+    padding-top: 26px;
+}
+.footer-item h3 span {
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 30px;
+}
+.footer-item h4 span {
+    color:#999;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 15px;
+}
+.footer-item h4 i {
+    color:#95e1d3;
+    font-size: 15px;
+    margin: 0 7px;
+}
+.form {
+    margin-top: 37px;
+    position: relative;
+}
+.form input {
+    border: 1px solid #e7e7e7;
+    padding: 13px 0;
+    padding-left: 12px;
+}
+.form input::placeholder{
+    color:#ccc;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.form button {
+    padding: 15px 34px;
+    background: #95e1d3;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-item h2 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.blog-text p {
+    padding-top: 0;
+}
+.blog-text {
+    padding-left: 5px;
+}
+.blog-text h5 {
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-top: 17px;
+    line-height: 18px;
+}
+.blog-main {
+    padding-bottom: 19px;
+}
+.insta {
+    border: 1px solid #fff;
+}
+.al-btn {
+    padding-top: 9px;
+}
+.al-btn a {
+    color:#333;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*============= copyright CSS ===========*/
+#copyright {
+    background: #f8f8f8;
+    border-top: 1px solid #e5e5e5;
+}
+.copyright p {
+    line-height: 60px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+.copyright span {
+    color: #f38181;
+}
+/*============= Navbar CSS ===========*/
+/*============= Navbar CSS ===========*/
